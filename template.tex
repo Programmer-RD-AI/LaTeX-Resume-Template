@@ -1,0 +1,86 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{graphicx}
+
+% Set fonts
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+
+% Define colors
+\definecolor{darkgray}{RGB}{64,64,64}
+\definecolor{lightgray}{RGB}{192,192,192}
+
+% Define section formatting
+\titleformat{\section}
+{\color{darkgray}\normalfont\Large\bfseries}
+{}{0em}{}[\titlerule]
+
+% Define subsection formatting
+\titleformat{\subsection}
+{\color{darkgray}\normalfont\large\bfseries}
+{}{0em}{}
+
+% Remove indentation
+\setlength{\parindent}{0pt}
+
+% Define a command to create a custom bar
+\newcommand{\custombar}[1]{%
+    \textcolor{black!30}{\rule{#1\textwidth}{8pt}}%
+}
+
+\begin{document}
+
+% Header
+\noindent
+{\LARGE \textbf{[Your Full Name]}} \\
+\href{mailto:[your-email@example.com]}{[your-email@example.com]} $\vert$ \href{https://www.linkedin.com/in/[your-linkedin-id]}{linkedin.com/in/[your-linkedin-id]} $\vert$ \href{https://github.com/[your-github-id]}{github.com/[your-github-id]} \\
+\textbf{Phone:} [Your Phone Number]
+
+\section*{Summary}
+[Brief summary about yourself highlighting your skills, experience, and career objectives.]
+
+\section*{Experience}
+\textbf{[Your Job Title, Organization]} \hfill [Start Date - End Date or "Present"] \\ 
+[Brief description of your responsibilities and achievements.]
+
+\section*{Education}
+\textbf{[Your University Name]} \\
+[Degree and Major] \hfill [Start Date - End Date or Expected Graduation Date] \\
+[Additional details like certifications or distinctions.]
+
+\section*{Projects}
+\vspace{0.2cm}
+\textbf{[Project Name]} \href{[Project Link]}{GitHub Link} \hfill [Start Date - End Date] \\
+- [Brief description of the project and technologies used.]
+
+\vspace{0.2cm}
+
+\section*{Certifications}
+\textbf{[Certification Name]} \hfill [Completion Date or Validity Period] \\
+[Include links if applicable.]
+
+\section*{Skills}
+\begin{itemize}[leftmargin=*,label={\color{darkgray}\textbullet}]
+    \item \textbf{Core:} [List core skills like programming languages]
+    \item \textbf{Frameworks:} [List frameworks and tools]
+    \item \textbf{Other:} [Other relevant skills]
+\end{itemize}
+
+\section*{Honors and Awards}
+\textbf{[Award Name]} \hfill [Date] \\
+[Brief description if applicable.]
+
+\section*{Volunteer}
+\textbf{[Role]} \\
+\textbf{[Start Date - End Date or Present]} \\
+[Brief description of responsibilities or contributions.]
+
+\section*{Referees}
+\textbf{[Name]} \\
+[Position, Organization] \\
+[Contact Details]
+\end{document}
